@@ -5,6 +5,7 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources//css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!-- Fixed Header -->
@@ -91,10 +92,6 @@
           </div>
         </div>
 
-        <div class="fourth empty">
-
-        </div>
-
       </div>
     </div>
 
@@ -137,11 +134,11 @@
               <img src="./resources/images/course-design.jpg" alt="">
             </div>
             <div class="description">
-              <h3>Computer Art</h3>
-             <p>COURSES
-             <br>
-             Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
-             </p>
+              <h3>Design</h3>
+              <p>COURSES
+              <br>
+              User Experience Design, User Research, Visual Design
+              </p>
             </div>
           </div>
 
@@ -151,7 +148,7 @@
               <h3>Data</h3>
               <p>COURSES
               <br>
-              Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+              Data Science, Big Data, SQL, Data Visualization
               </p>
             </div>
           </div>
@@ -159,10 +156,10 @@
           <div class="course business">
               <img src="./resources/images/course-business.jpg" alt="">
             <div class="description">
-              <h3>Computer Art</h3>
+              <h3>Business</h3>
               <p>COURSES
               <br>
-              Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+              Product Development, Business Development, Startup
               </p>
             </div>
           </div>
@@ -172,10 +169,10 @@
               <img src="./resources/images/course-marketing.jpg" alt="">
             </div>
             <div class="description">
-              <h3>Computer Art</h3>
+              <h3>Marketing</h3>
               <p>COURSES
               <br>
-              Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+              Analytics, Content Marketing, Mobile Marketing
               </p>
             </div>
           </div>
@@ -186,61 +183,59 @@
     </div>
 
     <!-- Thesis -->
-    <div class="container thesis">
 
-      <h1>Thesis Exhibit</h1>
-
-      <div class="left-column featured-thesis">
-        <video src="./resources/videos/thesis.mp4" controls poster="posterimage.jpg">
-        </video>
-        <h3>Reimagine Urban</h3>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        </p>
+    <div class="container">
+      <div class="section-header">
+        <h1>Thesis Exhibit</h1>
       </div>
-
-      <div class="right-column secondary-thesis">
-
-        <div class="first fisma">
-          <div class="thesis-image">
-            <img src="./resources/images/thesis-fisma.jpg" alt="">
-          </div>
-          <h3>Fisma: Design and Prototype</h3>
-          <p>Designer showcase of new prototype product</p>
+      <div class="thesis">
+        <div class="left-column featured-thesis">
+          <video width=100% height=auto autoplay controls alt="video of thesis program">
+          <source src="./resources/videos/thesis.mp4" type="video/mp4">
+          </video>
+          <h3>Reimagine Urban</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          </p>
         </div>
 
-        <div class="second ny">
-          <div class="thesis-image">
-            <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+        <div class="right-column secondary-thesis">
+
+          <div class="first fisma">
+            <div class="thesis-image">
+              <img src="./resources/images/thesis-fisma.jpg" alt="">
+            </div>
+            <div class="info-description">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
           </div>
-          <h3>Now and Then</h3>
-          <p>Research study about New York</p>
-        </div>
+
+          <div class="second ny">
+            <div class="thesis-image">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+            </div>
+            <div class="info-description">
+              <h3>Now and Then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
 
       </div>
     </div>
 
     <!-- Footer -->
     <footer>
-
-      <div class="container">
-
-        <div class="left-column">
-          <span>© 2016 Colmar Academy. All rights reserved.</span>
-        </div>
-
-        <div class="right-column">
-          <ul>
-            <li>
-              <a href="#">Terms</a>
-            </li>
-            <li>
-              <a href="#">Privacy</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
+      <div class="footer">
+      <span>© 2016 Colmar Academy. All rights reserved.</span>
+      <nav>
+        <span class="link">
+          <a href="#">Terms</a>
+        </span>
+        <span class="link">
+          <a href="#">Privacy</a>
+        </span>
+      </nav>
+            </div>
     </footer>
 
   </body>
