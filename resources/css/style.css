@@ -1,0 +1,88 @@
+html{
+  font-size: 25px;
+}
+
+body{
+  display: block;
+  margin:0;
+  background-color: white;
+}
+.grey-bg{
+  background-color: lightgrey;
+}
+
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+div{
+  display: block;
+}
+
+p{
+  display: block;
+}
+
+/* Fixed Header */
+
+.header{
+  display: flex;
+  font-family: sans-serif;
+  border-bottom: 1px solid lightgrey;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+  height: 64px;
+  top: 0;
+  padding: 0 24px;
+}
+
+.logo{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  width: 65%;
+  height: 32px;
+}
+
+.colmar{
+  color: black;
+  font-weight: bold;
+}
+
+.academy{
+  color: grey;
+}
+
+.header nav{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: auto;
+  margin-right: 48px;
+  font-size: 14px;
+}
+
+nav a{
+  color: black;
+}
+
+nav, span.link{
+  display: inline-block;
+  padding-left: 16px;
+}
+
+/* Banner */
+
+
+
+/* Campus Information */
+
+/* Courses */
+
+/* Thesis */
+
+/* Footer */
