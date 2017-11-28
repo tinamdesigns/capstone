@@ -9,14 +9,14 @@ body{
 }
 
 .grey-bg{
-  background-color: lightgrey;
+  background-color: #99CC99;
 }
 
 .container{
   max-width: 100%;
   margin: 0 auto;
   font-family: sans-serif;
-
+  overflow: hidden;
 }
 
 div{
@@ -31,16 +31,15 @@ p{
 
 .header{
   display: flex;
-  font-family: sans-serif;
-  border-bottom: 1px solid lightgrey;
   align-items: center;
   position: fixed;
   z-index: 10;
   width: 100%;
-  background-color: white;
-  height: 64px;
+  background-color: #003366;
+  height: 4rem;
   top: 0;
-  padding: 0 24px;
+  padding: 0 1.75rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .logo{
@@ -48,16 +47,24 @@ p{
   flex-grow: 1;
   align-items: center;
   width: 65%;
-  height: 32px;
+  height: 3rem;
+}
+
+.logo img{
+  height: 80%;
 }
 
 .colmar{
-  color: black;
-  font-weight: bold;
+  color: #99CC99;
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin: 0 0.4rem;
 }
 
 .academy{
-  color: grey;
+  color: #99CC99;
+  font-weight: 300;
+  font-size: 1.25rem;
 }
 
 .header nav{
@@ -65,17 +72,27 @@ p{
   justify-content: space-around;
   flex-wrap: wrap;
   width: auto;
-  margin-right: 48px;
-  font-size: 14px;
+  margin-right: 3rem;
+  font-size: 0.9rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
-nav a{
-  color: black;
+.header nav a{
+  color: #99CC99;
+}
+
+.header nav a:hover{
+  color: white;
+  transition: color 100ms ease-in-out;
 }
 
 nav, span.link{
   display: inline-block;
-  padding-left: 16px;
+  padding-left: 1rem;
+}
+
+.mobile-nav{
+  display: none;
 }
 
 /* Banner */
@@ -83,13 +100,13 @@ nav, span.link{
 .banner{
   display: flex;
   align-items: center;
-  padding-top: 64px;
+  padding-top: 4rem;
   width: 100%;
 }
 
 .left-column{
   width: 60%;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
   flex-grow: 1;
 }
 
@@ -103,33 +120,42 @@ nav, span.link{
   width: 40%;
 }
 
-
 .container h1{
   font-size: 4rem;
-  font-weight: bold;
-  color: darkgrey;
-  margin-bottom: 30px;
+  font-weight: 800;
+  color: #993300;
+  margin-bottom: 2rem;
   display: block;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.1;
 }
 
 .container h3{
   font-size: 2rem;
   font-weight: bold;
   color: darkgrey;
-  margin-bottom: 30px;
-}
-
-.btn{
-  background-color: darkgrey;
-  width: 60%;
-  text-align: center;
-  padding: 10px 0;
-  margin-bottom: 30px;
+  color: #003366;
+  font-family: 'EB Garamond', serif;
+  margin-bottom: 4rem;
+  line-height: 1.25;
 }
 
 .btn a{
+  background-color: #993300;
+  width: 80%;
+  text-align: center;
+  padding: 1rem 10rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   font-size: 1.25rem;
   color: white;
+}
+
+.btn a:hover{
+  font-size: 1.25rem;
+  color: #993300;
+  background-color: white;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 
 /* Campus Information */
@@ -142,8 +168,7 @@ nav, span.link{
 }
 
 .campus-info .right-column{
-  border-left: 1px solid lightgrey;
-  padding-top: 16px;
+  padding: 1rem 0;
 }
 
 .info-image img{
@@ -152,37 +177,45 @@ nav, span.link{
 
 .info-description{
   width: 65%;
-  padding-left: 20px;
+  padding-left: 1.5rem;
+}
+
+.secondary-info .first:hover, .second:hover, .third:hover{
+  background-color: #993300;
+  color: white;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
 }
 
 .featured-info h1{
-  margin: 32px 0 24px 0;
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  font-family: 'Open Sans', sans-serif;
+  color:  #99CC99;
 }
 
-.featured-info .title{
-  margin-top: 50px;
-  font-weight: bold;
-}
-
-.first, .second, .third, .fourth{
-  border-bottom: 1px solid lightgrey;
+.first, .second, .third{
   display: flex;
   align-items: center;
-  padding: 16px;
-}
-
-.fourth{
-  border-bottom: 0;
+  padding: 1rem;
 }
 
 .first h3, .second h3, .third h3{
-  margin-bottom: 10px;
-  font-weight: normal;
-  color: black;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  color:  #99CC99;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.third{
-  background-color: lightgrey;
+.campus-info p{
+  font-size: 1.15rem;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+  font-family: 'EB Garamond', serif;
+}
+
+.title{
+  font-family: 'EB Garamond', serif;
+  font-style: oblique;
 }
 
 /* Courses */
@@ -190,6 +223,14 @@ nav, span.link{
 .section-header{
   padding: 32px 0;
   text-align: center;
+}
+
+.course-bg .section-header h1{
+  color: #99CC99;
+}
+
+.course-bg{
+  background-color: #003366;
 }
 
 .courses{
@@ -202,7 +243,7 @@ nav, span.link{
 .courses .course{
   flex: auto;
   justify-content: space-around;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .course{
@@ -217,8 +258,34 @@ nav, span.link{
 
 .description{
   background-color: white;
+  padding: 25px;
+  height: 9rem;
 }
 
+.description:hover{
+  background-color: #993300;
+  color: white;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+.description h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  margin-bottom: 0;
+  padding-bottom: 1.2rem;
+  color: #99CC99;
+}
+
+.course .title{
+  font-family: 'EB Garamond', serif;
+  font-style: oblique;
+  padding-bottom: 1.2rem;
+}
+
+.course .topics{
+  font-family: 'EB Garamond', serif;
+  line-height: 1.5;
+}
 
 /* Thesis */
 
@@ -226,10 +293,11 @@ nav, span.link{
   display: flex;
   align-items: flex-start;
   width: 100%;
+  height: 100%;
 }
 
 .thesis .right-column{
-  padding-top: 16px;
+  padding: 1rem 0;
 }
 
 .thesis .first, .second{
@@ -237,6 +305,46 @@ nav, span.link{
   display: flex;
   align-items: center;
   padding: 16px;
+}
+
+.featured-thesis h3{
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color:  #99CC99;
+}
+
+.thesis p{
+  font-size: 1.15rem;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+  font-family: 'EB Garamond', serif;
+}
+
+.info-description{
+  width: 65%;
+  padding-left: 1.5rem;
+}
+
+.secondary-thesis .first:hover, .second:hover{
+  background-color: #993300;
+  color: white;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+
+.first, .second, .third{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.first h3, .second h3, .third h3{
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  color:  #99CC99;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*  Footer */
@@ -253,7 +361,6 @@ nav, span.link{
   top: 0;
   padding: 0 24px;
   font-size: 14px;
-
 }
 
 .footer span{
@@ -269,4 +376,29 @@ nav, span.link{
   justify-content: space-around;
   width: auto;
   margin-right: 48px;
+}
+
+/*      MEDIA QUERIES        */
+
+@media only screen and (max-width: 560px) {
+
+.header{
+  display: none;
+}
+
+.mobile-nav{
+  height: 64px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #003366;
+}
+
+.mobile-nav .icon{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+}
+
 }
