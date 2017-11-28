@@ -15,7 +15,6 @@ body{
 .container{
   max-width: 100%;
   margin: 0 auto;
-  font-family: sans-serif;
   overflow: hidden;
 }
 
@@ -118,6 +117,7 @@ nav, span.link{
 
 .right-column{
   width: 40%;
+  padding-right: 3rem;
 }
 
 .container h1{
@@ -140,22 +140,22 @@ nav, span.link{
   line-height: 1.25;
 }
 
-.btn a{
+.banner .right-column button {
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 0.5rem 0;
   background-color: #993300;
-  width: 80%;
-  text-align: center;
-  padding: 1rem 10rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  font-size: 1.25rem;
+  padding: 1rem 10rem;
   color: white;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
-.btn a:hover{
+.banner .right-column button:hover{
   font-size: 1.25rem;
-  color: #993300;
+  color:#993300;
   background-color: white;
-  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 
 /* Campus Information */
@@ -169,6 +169,7 @@ nav, span.link{
 
 .campus-info .right-column{
   padding: 1rem 0;
+  padding-right: 3rem;
 }
 
 .info-image img{
@@ -287,6 +288,10 @@ nav, span.link{
   line-height: 1.5;
 }
 
+.mobile-course{
+  display: none;
+}
+
 /* Thesis */
 
 .thesis{
@@ -298,6 +303,7 @@ nav, span.link{
 
 .thesis .right-column{
   padding: 1rem 0;
+  padding-right: 3rem;
 }
 
 .thesis .first, .second{
@@ -382,23 +388,144 @@ nav, span.link{
 
 @media only screen and (max-width: 560px) {
 
+html{
+  font-size: 14px
+}
+
 .header{
   display: none;
 }
 
-.mobile-nav{
-  height: 64px;
-  display: flex;
-  justify-content: space-around;
-  background-color: #003366;
+header{
+    padding: 0 0;
 }
 
-.mobile-nav .icon{
+header .logo {
+  display: none;
+}
+
+header nav{
+  display: none;
+}
+
+/* nav */
+
+.mobile-nav {
+  position: fixed;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:100%;
+  height: 4rem;
+  background-color:  #003366;
+}
+
+.mobile-nav a{
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   align-items: center;
 }
 
-.logo{
+.mobile-nav img{
+  height: 50%;
+  padding-right: 1.5rem;
 }
 
+/* banner */
+
+.banner{
+  display: inline;
+  padding: 0;
+  width: 100%
+}
+
+.banner .left-column{
+  width: 100%;
+  padding: 0;
+}
+
+.banner .right-column{
+  width: auto;
+  padding-bottom: 2rem;
+}
+
+.banner .right-column button{
+  width: 93%;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.banner .right-column h1{
+  font-size: 3rem;
+  padding:  1.25rem;
+
+}
+.banner .right-column h3{
+  padding: 0 1.25rem;
+}
+
+/* Campus Information */
+
+.featured-info{
+  display: none;
+}
+
+.secondary-info{
+  width: 100%;
+  display: inline;
+}
+
+.campus-info .right-column{
+  padding: 0;
+}
+
+/* Courses */
+
+.courses{
+  display: none;
+}
+
+.section-header{
+  padding-bottom: 1rem;
+}
+
+.section-header h1{
+  font-size: 3rem;
+}
+
+.mobile-course{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  background-color: #003366;
+  padding-bottom: 1rem;
+}
+
+.course-bg .container h3{
+  margin: 0rem;
+}
+
+.mobile-course h3{
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  margin: 0.25rem 1rem;
+}
+
+.mobile-course h3:hover{
+  background-color: #993300;
+  color: white;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+/* Thesis */
+
+.secondary-thesis{
+  display: none;
+}
 }
